@@ -89,6 +89,9 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: rgb(223, 27, 27);
+  background: -webkit-linear-gradient(rgb(230, 0, 0),rgb(249,165,64));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .margin-bot {
@@ -124,6 +127,10 @@
   color: white;
   margin-right: 1rem;
   cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .contact-btn:hover {
@@ -144,6 +151,10 @@
   border: 2px solid white;
   color: white;
   cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .about-btn:hover {
