@@ -16,6 +16,15 @@
   flex-direction: row;
 }
 
+.content-logo {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.content-logo img {
+  max-width: 10rem;
+}
+
 .content-text {
   display:flex;
   flex-direction: row;
@@ -104,6 +113,20 @@
 .hale-productions:hover {
   color: white;
   transition: .7s
+}
+
+@media screen and (max-width: 900px) {
+  .footer-content {
+    flex-direction: column-reverse;
+  }
+
+  .content-text {
+    margin-bottom: 1rem;
+  }
+
+  .content-logo {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 700px) {
