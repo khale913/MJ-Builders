@@ -68,7 +68,7 @@
 </div>
 
 <div id="myNav" class="overlay" [ngClass]="{ 'overlay-open': openOverlay === true}">
-  <a href="javascript:void(0)" class="closebtn" (click)="openOverlayMenu()" class="overlay-x">&times;</a>
+  <a href="javascript:void(0)" class="closebtn" (click)="openOverlayMenu()" class="overlay-x" id="x-btn">&times;</a>
   <div class="overlay-content">
     <a href="#" class="overlay-tab" (click)="closeModal()" routerLink="/" routerLinkActive="active">HOME</a>
     <a href="#" class="overlay-tab" (click)="closeModal()">SERVICES</a>
