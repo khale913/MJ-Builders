@@ -230,3 +230,9 @@ input[type=submit]:hover {
     box-shadow: 0px 30px 40px 0px rgba(0,0,0,.2);
   }
   }
+  @media only screen and (max-device-width: 800px) {
+    .image {
+      background-attachment: scroll;
+    }
+
+  }

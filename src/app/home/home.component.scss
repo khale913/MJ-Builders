@@ -783,3 +783,12 @@
   }
 }
 
+@media only screen and (max-device-width: 800px) {
+  .image {
+    background-attachment: scroll;
+  }
+
+  .servicesImg {
+    background-attachment: scroll;
+  }
+}

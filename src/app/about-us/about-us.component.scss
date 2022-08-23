@@ -189,3 +189,9 @@
   font-size: 3rem;
 }
 }
+@media only screen and (max-device-width: 800px) {
+  .image {
+    background-attachment: scroll;
+  }
+
+}
