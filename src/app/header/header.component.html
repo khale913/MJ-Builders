@@ -25,10 +25,11 @@
     </div>
     <div class="nav-tabs-container">
       <div class="">
-        <a href="/" class="nav-btn" routerLink="/" routerLinkActive="active">HOME</a>
+        <a [ngClass]="{'active-label': count === 1}" href="/" class="nav-btn" routerLink="/"
+          routerLinkActive="active">HOME</a>
       </div>
       <div class="dropdown">
-        <a class="dropbtn">SERVICES
+        <a [ngClass]="{'active-label': count === 2}" class="dropbtn">SERVICES
           <i class="fa fa-caret-down"></i>
         </a>
         <div class="dropdown-content">
@@ -42,16 +43,20 @@
         </div>
       </div>
       <div class="">
-        <a href="/" class="nav-btn" routerLink="/work" routerLinkActive="active">OUR WORK</a>
+        <a [ngClass]="{'active-label': count === 3}" href="/" class="nav-btn" routerLink="/work"
+          routerLinkActive="active">OUR WORK</a>
       </div>
       <div class="">
-        <a href="/" class="nav-btn" routerLink="/about" routerLinkActive="active">ABOUT US</a>
+        <a [ngClass]="{'active-label': count === 4}" href="/" class="nav-btn" routerLink="/about"
+          routerLinkActive="active">ABOUT US</a>
       </div>
       <div class="">
-        <a href="/" class="nav-btn" routerLink="/careers" routerLinkActive="active">CAREERS</a>
+        <a [ngClass]="{'active-label': count === 5}" href="/" class="nav-btn" routerLink="/careers"
+          routerLinkActive="active">CAREERS</a>
       </div>
       <div class="">
-        <a href="/" class="nav-btn" routerLink="/contact" routerLinkActive="active">CONTACT US</a>
+        <a [ngClass]="{'active-label': count === 6}" href="/" class="nav-btn" routerLink="/contact"
+          routerLinkActive="active">CONTACT US</a>
       </div>
     </div>
   </div>

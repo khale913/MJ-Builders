@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderComponent } from '../header/header.component';
+import { TabServiceService } from '../tab-service.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -6,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-us.component.scss']
 })
 export class ContactUsComponent implements OnInit {
-
-  constructor() { }
+  count: number | undefined;
+  constructor(private service: TabServiceService) { }
 
   ngOnInit(): void {
-    console.log('hello')
-  }
+    this.service.count.subscribe(c => {
+      this.count = c;
+    })
 
+    this.service.nextCount(6);
+
+  }
 }

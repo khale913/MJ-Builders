@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TabServiceService } from 'src/app/tab-service.service';
 
 @Component({
   selector: 'app-biohazard',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BiohazardComponent implements OnInit {
 
-  constructor() { }
+  count: number | undefined;
+  constructor(private service: TabServiceService) { }
 
   ngOnInit(): void {
-  }
+    this.service.count.subscribe(c => {
+      this.count = c;
+    })
 
+    this.service.nextCount(2);
+
+
+  }
 }

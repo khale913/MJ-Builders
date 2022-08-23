@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TabServiceService } from '../tab-service.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  count: number | undefined;
+  constructor(private service: TabServiceService) { }
 
   ngOnInit(): void {
-  }
+    this.service.count.subscribe(c => {
+      this.count = c;
+    })
 
+    this.service.nextCount(1);
+
+
+  }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { TabServiceService } from '../tab-service.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -17,12 +18,17 @@ export class HeaderComponent implements OnInit {
   //   // }
 
   // }
+  count: number | undefined;
+  activeTab: number = 1;
   openOverlay: boolean = false;
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private appsevice: TabServiceService) {
   }
 
+  ngOnInit(): void {
+    this.appsevice.count.subscribe(c => {
+      this.count = c;
+    })
+  }
   openOverlayMenu() {
     this.openOverlay = !this.openOverlay;
   }
