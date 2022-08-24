@@ -216,6 +216,16 @@
   display: block;
 }
 
+#overlay-subTab {
+    padding: 15px;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
 @media screen and (min-width: 1300px) {
 .logo-img {
   max-width: 25rem;
@@ -419,7 +429,7 @@
 // }
 
 .overlay-tab {
-  padding: 35px;
+  padding: 28px;
   font-family: 'Righteous', cursive;
   text-decoration: none;
   font-size: 25px;
@@ -458,4 +468,8 @@
 
 #x-btn {
   font-size: 90px;
+}
+
+#service-a {
+  pointer-events: none;
 }
