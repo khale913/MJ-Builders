@@ -290,6 +290,7 @@
   margin-bottom: 2rem;
   font-weight: 600;
   color: white;
+  line-height: 3.2rem;
 }
 .services-main-subtext{
   font-family: 'Montserrat', sans-serif;
@@ -619,7 +620,7 @@
 
 .horizontal-line {
   bottom: 17px;
-  right: -49px;
+  right: -33px;
 }
 
 .quote-text-box {
@@ -665,6 +666,17 @@
 
 .what-text {
   margin-bottom: 2rem;
+}
+.contact-btn {
+  background-color:rgb(223, 27, 27);
+  border: 2px solid rgb(223, 27, 27);
+  color: white;
+}
+
+.about-btn {
+  background-color: white;
+  border: 2px solid white;
+  color: black;
 }
 }
 
