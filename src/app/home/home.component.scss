@@ -684,6 +684,10 @@
 // media queries
 @media screen and (max-width: 550px) {
 
+  .services-main-text {
+    margin-bottom: 1rem;
+  }
+
   .contact-bar h2 {
     font-size: .85rem;
   }
