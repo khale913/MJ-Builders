@@ -610,12 +610,13 @@
 .what-we-do-container {
   height: auto;
   flex-direction: column;
-  align-items: normal;
+  align-items: center;
   padding: 2rem;
 }
 
-.what-we-img-container img {
+.what-we-img-container {
   // margin-right: 2rem;
+  justify-content: center;
 }
 
 .horizontal-line {
@@ -758,8 +759,6 @@
     min-width: 135px;
     padding: 8px 15px;
     white-space: nowrap;
-    background-color: transparent;
-    border: 2px solid rgb(223, 27, 27);
     color: white;
     margin-right: 1rem;
     cursor: pointer;
@@ -773,9 +772,6 @@
     min-width: 135px;
     padding: 8px 15px;
     white-space: nowrap;
-    background-color: transparent;
-    border: 2px solid white;
-    color: white;
     cursor: pointer;
   }
 
