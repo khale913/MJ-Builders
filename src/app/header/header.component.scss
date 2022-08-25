@@ -226,6 +226,8 @@
     transition: 0.3s;
 }
 
+
+
 @media screen and (min-width: 1300px) {
 .logo-img {
   max-width: 25rem;
@@ -470,6 +472,10 @@
   font-size: 90px;
 }
 
-#service-a {
-  pointer-events: none;
+.services-subDiv {
+  display: none;
+}
+
+.services-subShown {
+  display: block !important;
 }

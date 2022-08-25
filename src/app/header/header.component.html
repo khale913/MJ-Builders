@@ -72,12 +72,14 @@
   <a href="javascript:void(0)" class="closebtn" (click)="openOverlayMenu()" class="overlay-x" id="x-btn">&times;</a>
   <div class="overlay-content">
     <a href="#" class="overlay-tab" (click)="closeModal()" routerLink="/" routerLinkActive="active">HOME</a>
-    <a href="#" class="overlay-tab" id="service-a">SERVICES &#x2193;</a>
-    <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/waterdmg">Water & Flood</a>
-    <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/firedmg">Fire & Smoke</a>
-    <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/moldremoval">Mold Removal</a>
-    <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/biohazard">Biohazard</a>
-    <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/commercial">Commercial Services</a>
+    <a href="#" class="overlay-tab" id="service-a" (click)="openSubServices()">SERVICES &#x2193;</a>
+    <div class="services-subDiv" [ngClass]="{'services-subShown': serviceOpen === true}">
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/waterdmg">Water & Flood</a>
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/firedmg">Fire & Smoke</a>
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/moldremoval">Mold Removal</a>
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/biohazard">Biohazard</a>
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/commercial">Commercial Services</a>
+    </div>
     <a href="#" class="overlay-tab" routerLink="/work" routerLinkActive="active" (click)="closeModal()">OUR WORK</a>
     <a href="#" class="overlay-tab" routerLink="/about" routerLinkActive="active" (click)="closeModal()">ABOUT US</a>
     <a href="#" class="overlay-tab" routerLink="/careers" routerLinkActive="active" (click)="closeModal()">CAREERS</a>

@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   count: number | undefined;
   activeTab: number = 1;
   openOverlay: boolean = false;
+  serviceOpen: boolean = false;
   constructor(private appsevice: TabServiceService) {
   }
 
@@ -35,6 +36,12 @@ export class HeaderComponent implements OnInit {
 
   closeModal() {
     this.openOverlay = false;
+  }
+
+  openSubServices() {
+    console.log('OPEN ME');
+    this.serviceOpen = !this.serviceOpen;
+    console.log(this.serviceOpen)
   }
 
 }

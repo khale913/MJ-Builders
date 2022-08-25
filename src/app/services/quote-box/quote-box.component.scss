@@ -64,11 +64,13 @@
   font-weight: 700;
   border-radius: 2rem;
   min-width: 150px;
-  padding: 5px 30px;
+  padding: 5px 20px;
   white-space: nowrap;
   background-color: transparent;
   border: 2px solid rgb(223, 27, 27);
   cursor: pointer;
+  text-decoration: none;
+  text-align: center;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -126,7 +128,7 @@
 .phone-btn{
   font-size: .9rem;
   min-width: 150px;
-  padding: 5px 20px;
+  padding: 5px 15px;
 }
 
 }
@@ -142,6 +144,6 @@
   .phone-btn{
     font-size: .9rem;
     min-width: 120px;
-    padding: 5px 20px;
+    padding: 5px 10px;
   }
 }
