@@ -17,6 +17,7 @@ import { QuoteBoxComponent } from './services/quote-box/quote-box.component';
 import { MoldRemovalComponent } from './services/mold-removal/mold-removal.component';
 import { BiohazardComponent } from './services/biohazard/biohazard.component';
 import { CommercialServicesComponent } from './services/commercial-services/commercial-services.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CommercialServicesComponent } from './services/commercial-services/comm
     QuoteBoxComponent,
     MoldRemovalComponent,
     BiohazardComponent,
-    CommercialServicesComponent
+    CommercialServicesComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
