@@ -171,7 +171,9 @@
 .image {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 40%, transparent 80%), url('../../assets/new-images/fire-behind-home.jpg');
+  // background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 40%, transparent 80%), url('../../assets/new-images/fire-behind-home.jpg');
+    background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 50%, transparent 80%), url('../../assets/images/contactimg.jpg');
+    // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.675) 40%, transparent 80%), url('../../assets/images/thomas-ehling-qhgJkFXCJIY-unsplash\ \(1\).jpg');
 
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
