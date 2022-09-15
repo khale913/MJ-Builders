@@ -169,8 +169,8 @@
 .image {
   height: 90vh;
   width: 100%;
-  background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 40%, transparent 80%), url('../../assets/new-images/fire-behind-home.jpg');
-    // background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 50%, transparent 80%), url('../../assets/images/contactimg.jpg');
+  // background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 40%, transparent 80%), url('../../assets/new-images/fire-behind-home.jpg');
+    background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 50%, transparent 80%), url('../../assets/images/contactimg.jpg');
     // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.675) 40%, transparent 80%), url('../../assets/images/thomas-ehling-qhgJkFXCJIY-unsplash\ \(1\).jpg');
 
   background-repeat: no-repeat;
@@ -262,8 +262,12 @@
 .servicesImg {
   height: 900px;
   width: 100%;
+  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.583) 100%, transparent 100%),
+  //                   url('../../assets/new-images/generalHome.jpg');
+  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.583) 100%, transparent 100%),
+  // url('../../assets/new-images/sydney-rae-i0kQM6OdeVc-unsplash\ \(1\).jpg');
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.583) 100%, transparent 100%),
-                    url('../../assets/new-images/generalHome.jpg');
+  url('../../assets/new-images/emilio-williams-j2nbwWSll68-unsplash\ \(1\).jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
 
