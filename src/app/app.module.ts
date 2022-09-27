@@ -38,7 +38,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     PrivacyComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     // BrowserAnimationsModule,
   ],
