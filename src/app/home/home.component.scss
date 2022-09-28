@@ -176,9 +176,7 @@
 .image {
   height: 90vh;
   width: 100%;
-  // background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 40%, transparent 80%), url('../../assets/new-images/fire-behind-home.jpg');
     background-image: linear-gradient(to right, rgba(19, 30, 99, 0.675) 50%, transparent 80%), url('../../assets/images/contactimg.jpg');
-    // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.675) 40%, transparent 80%), url('../../assets/images/thomas-ehling-qhgJkFXCJIY-unsplash\ \(1\).jpg');
 
   background-repeat: no-repeat;
   background-size: 100% 100%, cover;
@@ -206,7 +204,6 @@
 
 .what-text {
   height: 350px;
-  // flex: 1.5;
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -231,7 +228,7 @@
 }
 
 .what-head {
-  // font-family: 'Oswald', sans-serif;
+
   font-family: 'Righteous', cursive;
   font-weight: 900;
   font-size: 4rem;
@@ -269,10 +266,6 @@
 .servicesImg {
   height: 900px;
   width: 100%;
-  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.583) 100%, transparent 100%),
-  //                   url('../../assets/new-images/generalHome.jpg');
-  // background-image: linear-gradient(to right, rgba(0, 0, 0, 0.583) 100%, transparent 100%),
-  // url('../../assets/new-images/sydney-rae-i0kQM6OdeVc-unsplash\ \(1\).jpg');
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.752) 100%, transparent 100%),
   url('../../assets/new-images/emilio-williams-j2nbwWSll68-unsplash\ \(1\).jpg');
   background-repeat: no-repeat;
@@ -295,7 +288,6 @@
 }
 
 .services-main-text{
-  // font-family: 'Oswald', sans-serif;
   font-family: 'Righteous', cursive;
   font-size: 5rem;
   margin: 0;
@@ -372,6 +364,7 @@
 
 .mold {
   background-image: url('../../assets/images/floodImg.jpg');
+
 }
 
 .invisible {
@@ -381,7 +374,7 @@
 .box-img {
   width: 100%;
   height: 150px;
-  // background-image: url('../../assets/images/chuttersnap-jp9JczGYMnY-unsplash.jpg');
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -399,7 +392,7 @@
 .service-title {
   color: white;
   font-size: 1.5rem;
-  // font-family: 'Oswald', sans-serif;
+
   font-family: 'Righteous', cursive;
   padding-bottom: 1rem;
 }
