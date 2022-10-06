@@ -8,6 +8,7 @@ import { TabServiceService } from '../tab-service.service';
 })
 export class HomeComponent implements OnInit {
   count: number | undefined;
+  learnHover: string = '';
   constructor(private service: TabServiceService) { }
 
   ngOnInit(): void {
@@ -16,7 +17,13 @@ export class HomeComponent implements OnInit {
     })
 
     this.service.nextCount(1);
+  }
 
-
+  hoverLearn(service: any, bool: boolean) {
+    if (bool === true) {
+      this.learnHover = service;
+    } else {
+      this.learnHover = '';
+    }
   }
 }

@@ -340,7 +340,10 @@
   border-radius: 6%;
   background-color: rgba(0, 0, 0, 0.515);
   margin: 0 1rem;
+  overflow: hidden;
 }
+
+
 
 .fire {
   background-image: url('../../assets/new-images/home-on-fire.jpg');
@@ -379,6 +382,13 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 6%;
+  transition: .3s;
+}
+
+.box-img:hover {
+  transition: .5s;
+    transform: scale(1.025);
+
 }
 
 
@@ -485,6 +495,11 @@
   color: white;
 }
 
+.active-learn {
+  border-color: #df1b1b;
+  transition: .2s;
+}
+
 @media screen and (max-width: 830px) {
 
 .main-text {
@@ -511,7 +526,7 @@
 }
 
 .servicesImg {
-  height: 2200px;
+  height: 2000px;
 }
 
 .services-box {
