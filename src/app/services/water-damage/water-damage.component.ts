@@ -17,6 +17,7 @@ export class WaterDamageComponent implements OnInit {
     })
 
     this.service.nextCount(2);
+    console.log('on service');
 
 
   }
