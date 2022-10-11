@@ -18,7 +18,10 @@ export class FireDamageComponent implements OnInit {
 
     this.service.nextCount(2);
 
+  }
 
+  thisCall(e: any) {
+    console.log('loaded!')
   }
 
 }
