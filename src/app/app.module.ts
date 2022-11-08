@@ -14,7 +14,6 @@ import { WaterDamageComponent } from './services/water-damage/water-damage.compo
 import { FireDamageComponent } from './services/fire-damage/fire-damage.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { QuoteBoxComponent } from './services/quote-box/quote-box.component';
-import { MoldRemovalComponent } from './services/mold-removal/mold-removal.component';
 import { BiohazardComponent } from './services/biohazard/biohazard.component';
 import { CommercialServicesComponent } from './services/commercial-services/commercial-services.component';
 import { PrivacyComponent } from './privacy/privacy.component';
@@ -33,7 +32,6 @@ import { VehicleDamageComponent } from './services/vehicle-damage/vehicle-damage
     FireDamageComponent,
     AboutUsComponent,
     QuoteBoxComponent,
-    MoldRemovalComponent,
     BiohazardComponent,
     CommercialServicesComponent,
     PrivacyComponent,
