@@ -88,15 +88,21 @@
   // font-family: 'Righteous', cursive;
   // font-weight: 100;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
+  font-weight: 100;
   font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
+  margin-right: 100px;
   color: rgb(223, 27, 27);
   background: -webkit-linear-gradient(rgb(230, 0, 0),rgb(255, 96, 10));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.bold {
+  font-weight: 900;
+}
+
 
 .margin-bot {
   margin-bottom: 3.5rem;
