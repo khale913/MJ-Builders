@@ -122,6 +122,11 @@
   transition: .7s
 }
 
+.license:hover {
+  color: white;
+  transition: .7s
+}
+
 @media screen and (max-width: 900px) {
   .footer-content {
     flex-direction: column-reverse;
