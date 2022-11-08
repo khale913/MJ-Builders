@@ -95,11 +95,13 @@
               ></p>
           </div>
         </div>
-        <!-- <div class="services-box">
-          <div class="box-img biohaz"></div>
+        <!-- <div class="services-box" [ngClass]="{'active-learn': learnHover === 'smoke'}">
+          <div class="box-img smoke"></div>
           <div class="box-content">
-            <h2 class="service-title">Biohazard Cleanup</h2>
-            <p class="service-learn" routerLink="/biohazard" routerLinkActive="active">LEARN MORE ></p>
+            <h2 class="service-title">Flood Damage</h2>
+            <p class="service-learn" routerLink="/firedmg" routerLinkActive="active"
+              (mouseover)="hoverLearn('smoke', true)" (mouseleave)="hoverLearn('smoke', false)">LEARN MORE
+              ></p>
           </div>
         </div> -->
         <div class="services-box" [ngClass]="{'active-learn': learnHover === 'commercial'}">
