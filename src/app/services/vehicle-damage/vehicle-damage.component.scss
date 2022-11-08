@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image {
+  height: 300px;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.373) 100%, transparent 100%),
+                    url('../../../assets/images/contactimg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.relative {
+  border-bottom: 1px solid black;
+  position:relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+// image text
+.text {
+  position: absolute;
+  color: red;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.top-header {
+  font-family: 'Righteous', cursive;
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+}
+
+.padding-top {
+  padding-top: 2rem;
+}
+
+.description-container {
+  display: flex;
+}
+
+.text-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.img-container img {
+  object-fit: cover;
+  height: 400px;
+  width: 350px;
+  -webkit-box-shadow: 0px 30px 40px 0px rgb(0 0 0 / 20%);
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.38);
+}
+
+.first-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.img-line {
+  width: 6px;
+  height: 200px;
+  background-color: rgb(223, 27, 27);
+}
+
+.first-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.first-header h1 {
+  font-family: 'Righteous', cursive;
+  font-size: 2rem;
+}
+
+.first-header p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+.call-us-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.call-us-btn-container button {
+  font-family: 'Righteous', cursive;
+  font-size: 1.1rem;
+  padding: 15px 100px;
+  border-radius: 35px;
+  border: 5px solid rgb(19,30,99);
+  background-color: white;
+  -webkit-box-shadow: 0px 30px 40px 0px rgb(0 0 0 / 20%);
+  box-shadow: 0px 30px 40px 0px rgba(0, 0, 0, 0.23);
+  cursor: pointer;
+}
+
+.img-load:empty {
+  animation: loading 1.1s infinite linear;
+  background: #dedfe1;
+  background-image: -webkit-linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+  background-repeat: no-repeat;
+}
+
+@keyframes loading {
+  0% {
+    background-position: -100px;
+  }
+  100% {
+  background-position: 200px;
+  }
+}
+
+.call-us-btn-container button:hover {
+  transition: .3s;
+  font-family: 'Righteous', cursive;
+  font-size: 1.1rem;
+  padding: 15px 100px;
+  border-radius: 35px;
+  border: 5px solid black;
+  background-color: rgb(176, 10, 10);
+  color: white;
+}
+
+
+@media screen and (max-width: 1080px) {
+
+}
+
+@media screen and (max-width: 750px) {
+.description-container {
+  flex-direction: column;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.first-text-container {
+  width: 100%;
+}
+
+.img-container {
+  justify-content: flex-start;
+}
+
+.call-us-btn-container button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 11px 85px;
+  border-radius: 50px;
+  border: 5px solid black;
+  background-color: rgb(176, 10, 10);
+  color: white;
+}
+
+.call-us-btn-container button:hover {
+  font-size: 1rem;
+  padding: 11px 85px;
+  border-radius: 50px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.top-header {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.call-us-btn-container button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: .9rem;
+  padding: 10px 50px;
+  border-radius: 50px;
+
+}
+
+.call-us-btn-container button:hover {
+  font-size: .9rem;
+  padding: 10px 50px;
+  border-radius: 50px;
+}
+}
+
+@media screen and (max-width: 350px) {
+  .top-header {
+    font-size: 2.5rem;
+  }
+  }
+  @media only screen and (max-device-width: 800px) {
+    .image {
+      background-attachment: scroll;
+    }
+
+  }

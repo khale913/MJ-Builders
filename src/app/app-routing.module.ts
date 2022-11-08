@@ -9,8 +9,9 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { BiohazardComponent } from './services/biohazard/biohazard.component';
 import { CommercialServicesComponent } from './services/commercial-services/commercial-services.component';
 import { FireDamageComponent } from './services/fire-damage/fire-damage.component';
-import { MoldRemovalComponent } from './services/mold-removal/mold-removal.component';
+// import { MoldRemovalComponent } from './services/mold-removal/mold-removal.component';
 import { WaterDamageComponent } from './services/water-damage/water-damage.component';
+import { VehicleDamageComponent } from './services/vehicle-damage/vehicle-damage.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'work', component: OurWorkComponent },
@@ -21,7 +22,9 @@ const routes: Routes = [
   { path: 'about', component: AboutUsComponent },
   { path: 'commercial', component: CommercialServicesComponent },
   { path: 'biohazard', component: BiohazardComponent },
-  { path: 'moldremoval', component: MoldRemovalComponent },
+  // { path: 'moldremoval', component: MoldRemovalComponent },
+  { path: 'vehicle-damage', component: VehicleDamageComponent },
+
   { path: 'privacy', component: PrivacyComponent },
   { path: 'blog', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
 ];
