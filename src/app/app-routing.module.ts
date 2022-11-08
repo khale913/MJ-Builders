@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'biohazard', component: BiohazardComponent },
   { path: 'moldremoval', component: MoldRemovalComponent },
   { path: 'privacy', component: PrivacyComponent },
-  { path: 'blogs', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
+  { path: 'blog', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
 ];
 
 @NgModule({

@@ -35,7 +35,7 @@
           <a href="#" routerLink="/waterdmg" routerLinkActive="active">WATER & FLOOD</a>
           <a href="#" routerLink="/firedmg" routerLinkActive="active">FIRE & SMOKE</a>
           <!-- <a href="#" routerLink="/smokedmg" routerLinkActive="active">SMOKE DAMAGE</a> -->
-          <a href="#" routerLink="/moldremoval" routerLinkActive="active">MOLD REMOVAL</a>
+          <a href="#" routerLink="/moldremoval" routerLinkActive="active">VEHICLE DAMAGE</a>
           <!-- <a href="#" routerLink="/biohazard" routerLinkActive="active">BIOHAZARD</a> -->
           <a href="#" routerLink="/commercial" routerLinkActive="active">COMMERCIAL SERVICES</a>
 
@@ -52,6 +52,10 @@
       <div class="">
         <a [ngClass]="{'active-label': count === 5}" href="/" class="nav-btn" routerLink="/careers"
           routerLinkActive="active">CAREERS</a>
+      </div>
+      <div class="">
+        <a [ngClass]="{'active-label': count === 7}" href="/" class="nav-btn" routerLink="/blog"
+          routerLinkActive="active">BLOG</a>
       </div>
       <div class="">
         <a [ngClass]="{'active-label': count === 6}" href="/" class="nav-btn" routerLink="/contact"
@@ -74,7 +78,7 @@
     <div class="services-subDiv" [ngClass]="{'services-subShown': serviceOpen === true}">
       <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/waterdmg">Water & Flood</a>
       <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/firedmg">Fire & Smoke</a>
-      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/moldremoval">Mold Removal</a>
+      <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/moldremoval">Vehicle Damage</a>
       <!-- <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/biohazard">Biohazard</a> -->
       <a href="#" id="overlay-subTab" (click)="closeModal()" routerLink="/commercial">Commercial Services</a>
     </div>
