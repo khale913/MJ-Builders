@@ -83,17 +83,6 @@
               (mouseover)="hoverLearn('mold', true)" (mouseleave)="hoverLearn('mold', false)">LEARN MORE ></p>
           </div>
         </div>
-      </div>
-      <div class="services-box-container">
-        <div class="services-box" [ngClass]="{'active-learn': learnHover === 'smoke'}">
-          <div class="box-img smoke"></div>
-          <div class="box-content">
-            <h2 class="service-title">Smoke Damage</h2>
-            <p class="service-learn" routerLink="/firedmg" routerLinkActive="active"
-              (mouseover)="hoverLearn('smoke', true)" (mouseleave)="hoverLearn('smoke', false)">LEARN MORE
-              ></p>
-          </div>
-        </div>
 
         <div class="services-box" [ngClass]="{'active-learn': learnHover === 'commercial'}">
           <div class="box-img commercial"></div>
@@ -104,6 +93,19 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="services-box-container">
+
+
+        <!-- <div class="services-box" [ngClass]="{'active-learn': learnHover === 'commercial'}">
+          <div class="box-img commercial"></div>
+          <div class="box-content">
+            <h2 class="service-title">Construction & Commercial Services</h2>
+            <p class="service-learn" routerLink="/commercial" routerLinkActive="active"
+              (mouseover)="hoverLearn('commercial', true)" (mouseleave)="hoverLearn('commercial', false)">LEARN MORE >
+            </p>
+          </div>
+        </div> -->
       </div>
     </div>
 
