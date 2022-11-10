@@ -18,6 +18,7 @@ import { BiohazardComponent } from './services/biohazard/biohazard.component';
 import { CommercialServicesComponent } from './services/commercial-services/commercial-services.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { VehicleDamageComponent } from './services/vehicle-damage/vehicle-damage.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { VehicleDamageComponent } from './services/vehicle-damage/vehicle-damage
     BiohazardComponent,
     CommercialServicesComponent,
     PrivacyComponent,
-    VehicleDamageComponent
+    VehicleDamageComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

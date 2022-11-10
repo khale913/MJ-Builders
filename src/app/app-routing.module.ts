@@ -9,7 +9,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { BiohazardComponent } from './services/biohazard/biohazard.component';
 import { CommercialServicesComponent } from './services/commercial-services/commercial-services.component';
 import { FireDamageComponent } from './services/fire-damage/fire-damage.component';
-
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WaterDamageComponent } from './services/water-damage/water-damage.component';
 import { VehicleDamageComponent } from './services/vehicle-damage/vehicle-damage.component';
 const routes: Routes = [
@@ -27,6 +27,11 @@ const routes: Routes = [
 
   { path: 'privacy', component: PrivacyComponent },
   { path: 'blog', loadChildren: () => import('./blogs/blogs.module').then(m => m.BlogsModule) },
+  //Wild Card Route for 404 request
+  {
+    path: '**', pathMatch: 'full',
+    component: PagenotfoundComponent
+  },
 ];
 
 @NgModule({
