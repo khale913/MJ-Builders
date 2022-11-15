@@ -134,6 +134,109 @@
   margin-bottom: 1rem;
 }
 
+.our-team-container {
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 3rem 2rem 3rem;
+}
+
+.our-team-container h2 {
+  font-size: 3rem;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 2rem;
+}
+
+.team-container {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+
+.team-img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  margin-right: 3rem;
+}
+
+.team-img img {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.name-title h3, h4{
+  font-family: 'Righteous', cursive;
+  margin: 0;
+}
+
+.name-title h3 {
+  font-size: 1.7rem;
+}
+
+.name-title h4 {
+  font-size: 1.2rem;
+  color: rgb(56, 56, 56);
+  margin-bottom: 1rem;
+}
+
+.job-description {
+  display: flex;
+  margin-right: 200px;
+}
+
+.job-description p {
+    font-family: 'Montserrat', sans-serif;
+
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .job-description {
+    display: flex;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .job-description {
+    display: flex;
+    margin-right: 0px;
+  }
+
+  .team-img {
+    margin-right: 20px;
+  }
+
+  .team-img img {
+    object-fit: cover;
+    display: flex;
+    height: 200px;
+    width: 200px;
+  }
+
+  .name-title h3 {
+    font-size: 1.5rem;
+  }
+
+  .name-title h4 {
+    font-size: 1rem;
+    color: rgb(56, 56, 56);
+    margin-bottom: 1rem;
+  }
+
+
+  .job-description p {
+    font-size: .8rem;
+  }
+}
+
 @media screen and (max-width: 1080px) {
   .work-container h2 {
     line-height: 50px;
@@ -182,6 +285,31 @@
   line-height: 20px;
   // margin: 0 0rem 0 0;
 }
+}
+
+@media screen and (max-width: 625px) {
+  .team-container {
+    flex-direction: column;
+  }
+
+  .team-img img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .name-title h3 {
+    font-size: 1.7rem;
+    margin-bottom: 6px;
+  }
+  .name-title h4 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .job-description p {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 400px) {

@@ -19,6 +19,24 @@
     provided.</p>
 </div>
 
+<div class="our-team-container">
+  <h2>Our Team</h2>
+  <div class="team-container" *ngFor="let e of employees">
+    <div class="team-img">
+      <img src="../../assets/images/biohazIMG.jpg" alt="">
+    </div>
+    <div class="team-content">
+      <div class="name-title">
+        <h3>{{e.name}}</h3>
+        <h4>{{e.title}}</h4>
+      </div>
+      <div class="job-description">
+        <p>{{e.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="areas-container">
   <div class="areas-img">
     <img src="../../assets/TEST/map-update-dark.png" alt="MJ Builders service areas" class="map-img">
